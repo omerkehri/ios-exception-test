@@ -66,6 +66,12 @@ public class AppDelegate : UIApplicationDelegate
     {
         await Task.Yield();
 
-        throw new Exception();
+        try
+        {
+            throw new Exception();
+        }
+        catch
+        {
+        }
     }
 }
